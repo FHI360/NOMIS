@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.HivRiskAssessment" table="APP.HIVRISKASSESSMENT">
+      <id name="recordId" column="RECORDID" type="int">
+        <generator class="identity" />
+    </id>
+    <property name="ageAtRiskAssessment" column="AGEATRISKASSESSMENT" type="int"/>
+    <property name="ageUnitAtRiskAssessment" column="AGEUNITATRISKASSESSMENT" type="int"/>
+    <property name="bloodTransfusionQuestion" column="BLOODTRANSFUSIONQUESTION" type="int" />
+    <property name="childCircumcisedOrEarPierced" column="CHILDCIRCUMCISEDOREARPIERCED" type="int"/>
+    <property name="childAtRiskQuestion" column="CHILDATRISKQUESTION" type="int"/>
+    <property name="childEverPregnantQuestion" column="CHILDEVERPREGNANTQUESTION" type="int"/>
+    <property name="childHasMoreThanTwoIllnessQuestion" column="CHILDHASMORETHANTWOILLNESSQUESTION" type="int"/>
+    <property name="childReferredForHIVTest" column="CHILDREFERREDFORHIVTEST" type="int" />
+    <property name="childSickQuestion" column="CHILDSICKQUESTION" type="int" />
+    <property name="childTestedQuestion" column="CHILDTESTEDQUESTION" type="int"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="dateOfAssessment" column="DATEOFASSESSMENT" type="date"/>
+    <property name="hivParentQuestion" column="HIVPARENTQUESTION" type="int"/>
+    <property name="hivSibblingQuestion" column="HIVSIBBLINGQUESTION" type="int"/>
+    <property name="hivStatusAtRiskAssessment" column="HIVSTATUSATRISKASSESSMENT" type="int"/>
+    <property name="hivStatusQuestion" column="HIVSTATUSQUESTION" type="int"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+    <property name="motherSicknessQuestion" column="MOTHERSICKNESSQUESTION" type="int"/>
+    <property name="nameOfAssessor" column="NAMEOFASSESSOR" type="string"/>
+    <property name="ovcId" column="OVCID" type="string"/>
+    <property name="recordedBy" column="RECORDEDBY" type="string"/>
+    <property name="sexualAbuseQuestion" column="SEXUALABUSEQUESTION" type="int"/>
+    <property name="sibblingSicknessQuestion" column="SIBBLINGSICKNESSQUESTION" type="int"/>
+    
+    <property name="drugInjectionQuestion" column="DRUGINJECTIONQUESTION" type="int"/>
+    <property name="genitalDischargeQuestion" column="GENITALDISCHARGEQUESTION" type="int"/>
+    <property name="sexualActivityQuestion" column="SEXUALACTIVITYQUESTION" type="int"/>
+  </class>
+</hibernate-mapping>

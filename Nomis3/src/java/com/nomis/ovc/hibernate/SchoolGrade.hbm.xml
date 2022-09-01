@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.SchoolGrade" table="APP.SCHOOLGRADE">
+      <id name="id" column="ID" type="string"/>
+      <property name="dateCreated" column="DATECREATED" type="date"/>
+      <property name="gradeLevel" column="GRADELEVEL" type="int"/>
+      <property name="gradeName" column="GRADENAME" type="string"/>
+      <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+      <property name="markForDelete" column="MARKEDFORDELETE" type="int"/>
+      <property name="recordedBy" column="RECORDEDBY" type="string"/>
+  </class>
+</hibernate-mapping>

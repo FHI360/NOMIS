@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
+    <!--<property name="hibernate.connection.url">jdbc:derby:C:\Nomis3\dbs\nomis3db</property>
+    <property name="hibernate.connection.username">nomis</property>
+    <property name="hibernate.connection.password">nomispw</property>-->
+    <mapping resource="com/nomis/ovc/hibernate/OrganizationUnitHierarchy.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/OrganizationUnit.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/User.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/UserActivityTracker.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/CommunityBasedOrganization.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/Partner.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/SiteSetup.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/ServiceDomain.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/School.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/SchoolGrade.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/CommunityWorker.hbm.xml"/>
+    <!--<mapping resource="com/nomis/ovc/hibernate/HouseholdAssessment.hbm.xml"/>-->
+    <mapping resource="com/nomis/ovc/hibernate/VulnerabilityStatus.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/Ovc.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/AdultHouseholdMember.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/ChildService.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/HouseholdService.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/HivRiskAssessment.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/CareplanAchievementChecklist.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/HouseholdReferral.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/NutritionAssessment.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/HivStatusManager.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/BeneficiaryService.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/ReferralFacility.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/BeneficiaryStatusUpdate.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/ChildEducationPerformanceAssessment.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/CareAndSupportChecklist.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/CaregiverAccessToEmergencyFund.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/HouseholdCareplan.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/RevisedHouseholdVulnerabilityAssessment.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/HouseholdVulnerabilityAssessment.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/DatasetSetting.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/HouseholdEnrollment.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/DataImportFileUpload.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/QuarterlyStatusTracker.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/EnrollmentStatusHistory.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/HivStatusHistory.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/CustomIndicatorsReport.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/ChildStatusIndex.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/DatimReport.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/DatimReportTemplateTest.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/NutritionStatus.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/Occupation.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/UserRole.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/HivPositiveDataManager.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/HivRiskAssessmentReport.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/OvcBeneficiaryService.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/BeneficiaryEnrollment.hbm.xml"/>
+    <mapping resource="com/nomis/ovc/hibernate/FacilityOvcOffer.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

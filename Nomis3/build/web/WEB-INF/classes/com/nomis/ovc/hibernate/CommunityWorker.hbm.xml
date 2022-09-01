@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.CommunityWorker" table="APP.COMMUNITYWORKER">
+     <id column="COMMUNITYWORKERID" name="communityWorkerId" type="string"/>
+    <property column="DATECREATED" name="dateCreated" type="date"/>
+    <property column="DESIGNATION" name="designation" type="string"/>
+    <property column="FIRSTNAME" name="firstName" type="string"/>
+    <property column="LASTMODIFIEDDATE" name="lastModifiedDate" type="date"/>
+    <property column="LEVEL4OUID" name="level4OuId" type="string"/>
+    <property column="RECORDEDBY" name="recordedBy" type="string"/>
+    <property column="SEX" name="sex" type="string"/>
+    <property column="SURNAME" name="surname" type="string"/>
+    <property column="ENROLLMENTSTATUS" name="enrollmentStatus" type="int"/> 
+  </class>
+</hibernate-mapping>

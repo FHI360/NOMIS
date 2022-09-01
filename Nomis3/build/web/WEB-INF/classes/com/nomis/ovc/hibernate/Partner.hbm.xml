@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.Partner" table="APP.PARTNER">
+    <id name="partnerCode" column="PARTNERCODE" type="string"/>
+    <property name="partnerName" column="PARTNERNAME" type="string"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="datimId" column="DATIMID" type="string"/>
+  </class>
+</hibernate-mapping>

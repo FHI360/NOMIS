@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.HouseholdEnrollment" table="APP.HOUSEHOLDENROLLMENT">
+      <id name="hhUniqueId" column="HHUNIQUEID" type="string"/>
+      <property name="address" column="ADDRESS" type="string"/>
+      <property name="cboId" column="CBOID" type="string"/>
+      <property name="cgEngagedInEconomicActivities" column="CGENGAGEDINECONOMICACTIVITIES" type="int"/>
+      <property name="childUndernourished" column="CHILDUNDERNOURISHED" type="int"/>
+      <property name="childrenEnrolledInSchool" column="CHILDRENENROLLEDINSCHOOL" type="int"/>
+      <property name="childrenHasBirthCertificate" column="CHILDRENHASBIRTHCERTIFICATE" type="int"/>
+      <property name="currentEnrollmentStatus" column="CURRENTENROLLMENTSTATUS" type="int"/>
+      <property name="dateCasePlanDeveloped" column="DATECASEPLANDEVELOPED" type="date"/>
+      <property name="dateCreated" column="DATECREATED" type="date"/>
+      <property name="dateOfAssessment" column="DATEOFASSESSMENT" type="date"/>
+      <property name="dateOfCurrentStatus" column="DATEOFCURRENTSTATUS" type="date"/>
+      <property name="enrollmentId" column="ENROLLMENTID" type="string"/>
+      <property name="hasViralLoadResult" column="HASVIRALLOADRESULT" type="int"/>
+      <property name="hhHasCasePlan" column="HHHASCASEPLAN" type="int"/>
+      <property name="hivPositiveLinked" column="HIVPOSITIVELINKED" type="int"/>
+      <property name="hivPreventionKnowledge" column="HIVPREVENTIONKNOWLEDGE" type="int"/>
+      <property name="hivStatusKnown" column="HIVSTATUSKNOWN" type="int"/>
+      <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+      <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+      <property name="organizationUnit" column="ORGANIZATIONUNIT" type="string"/>
+      <property name="partnerCode" column="PARTNERCODE" type="string"/>
+      <property name="recordedBy" column="RECORDEDBY" type="string"/>
+      <property name="regularSchoolAttendance" column="REGULARSCHOOLATTENDANCE" type="int"/>
+      <property name="socialEmotionalSupport" column="SOCIALEMOTIONALSUPPORT" type="int"/>
+      <property name="stableAdult" column="STABLEADULT" type="int"/>
+      <property name="violenceExperienceReported" column="VIOLENCEEXPERIENCEREPORTED" type="int"/>
+      <property name="volunteerName" column="VOLUNTEERNAME" type="string"/>
+      <property name="numberOfChildrenInHousehold" column="NUMBEROFCHILDRENINHOUSEHOLD" type="int"/>
+      <property name="numberOfPeopleInHousehold" column="NUMBEROFPEOPLEINHOUSEHOLD" type="int"/>
+      <property name="legacyId" column="LEGACYID" type="string"/>
+  </class>
+</hibernate-mapping>

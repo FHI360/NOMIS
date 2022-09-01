@@ -1,0 +1,2 @@
+#Enter full path of the hibernate.txt file. It must be a text file
+hibernateFilePath=C:\Nomis3\conf\hibernate\hibernate.txt

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.FacilityOvcOffer" table="APP.FACILITYOVCOFFER">
+    <id name="clientUniqueId" column="CLIENTUNIQUEID" type="string"/>
+    <property name="age" column="AGE" type="int"/>
+    <property name="ageUnit" column="AGEUNIT" type="int"/>
+    <property name="caregiverFirstName" column="CAREGIVERFIRSTNAME" type="string"/>
+    <property name="caregiverSurname" column="CAREGIVERSURNAME" type="string"/>
+    <property name="cboId" column="CBOID" type="string"/>
+    <property name="dateEnrolledOnTreatment" column="DATEENROLLEDONTREATMENT" type="date"/>
+    <property name="dateCaregiverSigned" column="DATECAREGIVERSIGNED" type="date"/>
+    <property name="dateFacilityStaffSigned" column="DATEFACILITYSTAFFSIGNED" type="date"/>
+    <property name="facilityStaffFirstName" column="FACILITYSTAFFFIRSTNAME" type="string"/>
+    <property name="facilityStaffSurname" column="FACILITYSTAFFSURNAME" type="string"/>
+    <property name="clientFirstName" column="CLIENTFIRSTNAME" type="string"/>
+    <property name="clientSurname" column="CLIENTSURNAME" type="string"/>
+    <property name="hivTreatmentFacilityId" column="HIVTREATMENTFACILITYID" type="string"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+    <property name="nameOfPersonToShareContactWith" column="NAMEOFPERSONTOSHARECONTACTWITH" type="string"/>
+    <property name="partnerCode" column="PARTNERCODE" type="string"/>
+    <property name="sex" column="SEX" type="string"/>
+    <property name="shareContactQuestion" column="SHARECONTACTQUESTION" type="int"/>
+    <property name="treatmentId" column="TREATMENTID" type="string"/>
+    <property name="userName" column="RECORDEDBY" type="string"/>
+    <property name="level4OuId" column="ORGANIZATIONUNITID" type="string"/>
+  </class>
+</hibernate-mapping>

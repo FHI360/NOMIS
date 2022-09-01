@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.Service" table="APP.SERVICE">
+     <id name="serviceId" column="SERVICEID" type="string"/> 
+     <property name="beneficiaryType" column="BENEFICIARYTYPE" type="int"/>
+     <property name="cascadableEndAge" column="CASCADABLEENDAGE" type="int"/>
+     <property name="cascadableStartAge" column="CASCADABLESTARTAGE" type="int"/>
+     <property name="dateCreated" column="DATECREATED" type="date"/>
+     <property name="domainId" column="DOMAINID" type="string"/>
+     <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+     <property name="recordedBy" column="RECORDEDBY" type="string"/>
+     <property name="serviceCode" column="SERVICECODE" type="string"/>
+     <property name="serviceName" column="SERVICENAME" type="string"/>
+     <property name="serviceValue" column="SERVICEVALUE" type="string"/>
+     <property name="displayStatus" column="DISPLAYSTATUS" type="int"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,130 @@
+.kidmap {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.homepagestyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #000000;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+}
+.fieldset {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #5D7E9F;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+}
+.quicklinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 8px;
+	color: #FFFFFF;
+}
+.forms {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+}
+.boaderall {
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #0075B6;
+	border-bottom-color: #0075B6;
+	border-left-color: #0075B6;
+	color: #FEFEFE;
+}
+.leftpane_border {
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #0075B6;
+	border-bottom-color: #0075B6;
+	border-left-color: #0075B6;
+}
+.copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: center;
+}
+
+/*   */
+
+.csiscore {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+        text-align: center;
+}
+
+
+.shortfieldcellinput {
+ width: 50px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+}
+
+
+
+/*
+
+
+.csiscore {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+        text-align: center;
+}
+.kidmap {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.homepagestyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #000000;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+}
+.quicklinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 8px;
+	color: #FFFFFF;
+}
+.forms {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+}
+.shortfieldcellinput {
+ width: 50px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+}
+
+
+
+*/

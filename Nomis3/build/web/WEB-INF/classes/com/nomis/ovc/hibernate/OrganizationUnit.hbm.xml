@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.metadata.OrganizationUnit" table="APP.ORGANIZATIONUNIT">
+      <id name="uid" column="UID" type="string" />
+    <property name="dateCreated" column="DATECREATED" type="date" />
+    <property name="description" column="DESCRIPTION" type="string" />
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="name" column="OUNAME" type="string" />
+    <property name="oucode" column="OUCODE" type="string" />
+    <property name="oulevel" column="OULEVEL" type="int"/>
+    <property name="ouPath" column="OUPATH" type="string" />
+    <property name="parentId" column="PARENTID" type="string" />
+    <property name="legacyId" column="LEGACYID" type="string"/>
+    <property name="datimId" column="DATIMID" type="string"/>
+  </class>
+</hibernate-mapping>

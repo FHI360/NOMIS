@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.BeneficiaryStatusUpdate" table="APP.BENEFICIARYSTATUSUPDATE">
+      <id name="beneficiaryId" column="BENEFICIARYID" type="string"/>
+      <property name="beneficiaryType" column="BENEFICIARYTYPE" type="int"/>
+      <property name="dateCreated" column="DATECREATED" type="date"/>
+      <property name="dateEnrolledOnTreatment" column="DATEENROLLEDONTREATMENT" type="date"/>
+      <property name="newHivStatus" column="NEWHIVSTATUS" type="int"/>
+      <property name="dateOfNewStatus" column="DATEOFNEWSTATUS" type="date"/>
+      <property name="enrolledOnTreatment" column="ENROLLEDONTREATMENT" type="int"/>
+      <property name="facilityId" column="FACILITYID" type="string" />
+      <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+      <property name="recordedBy" column="RECORDEDBY" type="string"/>
+      <property name="pointOfUpdateValue" column="POINTOFUPDATE" type="int"/>
+      <property name="birthCertificate" column="CHILDHASBIRTHCERTIFICATE" type="int"/>
+      <property name="schoolStatus" column="CHILDINSCHOOL" type="int"/>
+      <property name="schoolName" column="NAMEOFSCHOOL" type="string"/>
+      <property name="grade" column="SCHOOLGRADE" type="string"/>
+      <property name="enrolledInVocationalTraining" column="ENROLLEDINVOCATIONALTRAINING" type="int"/>
+      <property name="nameOfVocationalTraining" column="NAMEOFVOCATIONALTRAINING" type="string"/>
+      <property name="updateCaregiverHivStatus" column="UPDATECAREGIVERHIVSTATUS" type="int"/>
+      <property name="updateChildBirthRegStatus" column="UPDATECHILDBIRTHREGSTATUS" type="int"/>
+      <property name="updateChildHivStatus" column="UPDATECHILDHIVSTATUS" type="int"/>
+      <property name="childExitedFromProgram" column="CHILDEXITEDFROMPROGRAM" type="int"/>
+      <property name="childExitStatus" column="CHILDEXITSTATUS" type="int"/>
+      <property name="caregiverExitStatus" column="CAREGIVEREXITSTATUS" type="int"/>
+      <property name="caregiverExitedFromProgram" column="CAREGIVEREXITEDFROMPROGRAM" type="int"/>
+      <property name="dateChildExitedFromProgram" column="DATECHILDEXITEDFROMPROGRAM" type="date"/>
+      <property name="dateCaregiverExitedFromProgram" column="DATECAREGIVEREXITEDFROMPROGRAM" type="date"/>
+      <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+  </class>
+</hibernate-mapping>

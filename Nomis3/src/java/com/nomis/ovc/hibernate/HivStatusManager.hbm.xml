@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.HivStatusManager" table="APP.HIVSTATUSMANAGER">
+      <id name="beneficiaryId" column="BENEFICIARYID" type="string"/>
+      <property name="beneficiaryType" column="BENEFICIARYTYPE" type="int"/>
+      <property name="dateCreated" column="DATECREATED" type="date"/>
+      <property name="dateEnrolledOnTreatment" column="DATEENROLLEDONTREATMENT" type="date"/>
+      <property name="newHivStatus" column="NEWHIVSTATUS" type="int"/>
+      <property name="dateOfNewStatus" column="DATEOFNEWSTATUS" type="date"/>
+      <property name="enrolledOnTreatment" column="ENROLLEDONTREATMENT" type="int"/>
+      <property name="facilityId" column="FACILITYID" type="string" />
+      <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+      <property name="recordedBy" column="RECORDEDBY" type="string"/>
+      <property name="pointOfUpdateValue" column="POINTOFUPDATE" type="int"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.DatasetSetting" table="APP.DATASETSETTING">
+    <id name="moduleId" column="MODULEID" type="string"/>
+    <property name="datasetId" column="DATASETID" type="string"/>
+    <property name="LastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="recordedBy" column="RECORDEDBY" type="string"/>
+  </class>
+</hibernate-mapping>

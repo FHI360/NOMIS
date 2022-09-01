@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.ChildStatusIndex" table="APP.CHILDSTATUSINDEX">
+      <id name="id" column="ID" type="int">
+        <generator class="identity"/>
+    </id>
+      <property name="abuseAndExploitation" column="ABUSEANDEXPLOITATION" type="int"/>
+      <property name="assessmentNumber" column="ASSESSMENTNUMBER" type="int"/>
+      <property name="care" column="CARE" type="int"/>
+      <property name="csiDate" column="CSIDATE" type="date"/>
+      <property name="developmentAndPerformance" column="DEVELOPMENTANDPERFORMANCE" type="int"/>
+      <property name="educationAndWork" column="EDUCATIONANDWORK" type="int"/>
+      <property name="emotionalHealth" column="EMOTIONALHEALTH" type="int"/>
+      <property name="foodSecurity" column="FOODSECURITY" type="int"/>
+      <property name="healthCareServices" column="HEALTHCARESERVICES" type="int"/>
+      <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+      <property name="legalProtection" column="LEGALPROTECTION" type="int"/>
+      <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+      <property name="nutritionAndGrowth" column="NUTRITIONANDGROWTH" type="int"/>
+      <property name="ovcId" column="OVCID" type="string"/>
+      <property name="shelter" column="SHELTER" type="int"/>
+      <property name="socialBehaviour" column="SOCIALBEHAVIOUR" type="int"/>
+      <property name="totalCsiScore" column="TOTALCSISCORE" type="int"/>
+      <property name="wellness" column="WELLNESS" type="int"/>
+  </class>
+</hibernate-mapping>

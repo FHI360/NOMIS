@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="FacilityOvcConsentForm" type="com.nomis.facilityovcconsent.controller.FacilityOvcConsentForm"/>
+        <form-bean name="OvcMthlySummaryForm" type="com.nomis.reports.controller.OvcMthlySummaryForm"/>
+        <form-bean name="AdultMemberMergeOperationForm" type="com.nomis.dataadministration.controller.AdultMemberMergeOperationForm"/>
+        <form-bean name="ExportSummaryReportForm" type="com.nomis.exportimport.controller.ExportSummaryReportForm"/>
+        <form-bean name="HouseholdMergeOperationForm" type="com.nomis.dataadministration.controller.HouseholdMergeOperationForm"/>
+        <form-bean name="AdminUserForm" type="com.nomis.user.controller.AdminUserForm"/>
+        <form-bean name="UserRoleSetupForm" type="com.nomis.userrole.controller.UserRoleSetupForm"/>
+        <form-bean name="EnrollmentStreamMergeForm" type="com.nomis.maintenance.controller.EnrollmentStreamMergeForm"/>
+        <form-bean name="EnrollmentStatusUpdateForm" type="com.nomis.maintenance.controller.EnrollmentStatusUpdateForm"/>
+        <form-bean name="EnrollmentStatusManagementForm" type="com.nomis.enrollmentstatus.controller.EnrollmentStatusManagementForm"/>
+        <!--<form-bean name="EnrollmentStatusManagementForm" type="com.nomis.maintenance.controller.EnrollmentStatusManagementForm"/>-->
+        <form-bean name="CustomIndicatorReportForm" type="com.nomis.reports.controller.CustomIndicatorReportForm"/>
+        <form-bean name="OvcRegisterForm" type="com.nomis.reports.controller.OvcRegisterForm"/>
+        <form-bean name="DatimDataGenerationForm" type="com.nomis.reports.controller.DatimDataGenerationForm"/>
+        <form-bean name="DatabaseDefragmentationForm" type="com.nomis.maintenance.controller.DatabaseDefragmentationForm"/>
+        <form-bean name="AnalyticsHomeForm" type="com.nomis.reports.controller.AnalyticsHomeForm"/>
+        <form-bean name="CustomIndicatorsDataGenerationForm" type="com.nomis.reports.controller.CustomIndicatorsDataGenerationForm"/>
+        <form-bean name="BulkDeleteDataUploadForm" type="com.nomis.maintenance.controller.BulkDeleteDataUploadForm"/>
+        <form-bean name="MaintenanceHomeForm" type="com.nomis.maintenance.controller.MaintenanceHomeForm"/>
+        <form-bean name="BulkDeleteOperationForm" type="com.nomis.maintenance.controller.BulkDeleteOperationForm"/>
+        <form-bean name="AdhocOperationsForm" type="com.nomis.maintenance.controller.AdhocOperationsForm"/>
+        <form-bean name="DatimReportForm" type="com.nomis.reports.controller.DatimReportForm"/>
+        <form-bean name="XMLDataImportForm" type="com.nomis.exportimport.controller.XMLDataImportForm"/>
+        <form-bean name="XMLDataExportForm" type="com.nomis.exportimport.controller.XMLDataExportForm"/>
+        <form-bean name="MetadataImportForm" type="com.nomis.exportimport.controller.MetadataImportForm"/>
+        <form-bean name="MetadataExportForm" type="com.nomis.exportimport.controller.MetadataExportForm"/>
+        <form-bean name="ExportImportForm" type="com.nomis.exportimport.controller.ExportImportForm"/>
+        <form-bean name="NationalHivRiskAssessmentForm" type="com.nomis.hivriskassessment.controller.NationalHivRiskAssessmentForm"/>
+        <form-bean name="NationalHouseholdServiceForm" type="com.nomis.caregiverservice.controller.NationalHouseholdServiceForm"/>
+        <form-bean name="DatasetManagementForm" type="com.nomis.maintenance.controller.DatasetManagementForm"/>
+        <form-bean name="AppSettingForm" type="com.nomis.maintenance.controller.AppSettingForm"/>
+        <form-bean name="NationalChildServiceForm" type="com.nomis.childservice.controller.NationalChildServiceForm"/>
+        <form-bean name="NationalChildEnrollmentForm" type="com.nomis.childenrollment.controller.NationalChildEnrollmentForm"/>
+        <form-bean name="NationalHouseholdEnrollmentForm" type="com.nomis.householdenrollment.controller.NationalHouseholdEnrollmentForm"/>
+        <form-bean name="HouseholdCareplanForm" type="com.nomis.householdcareplan.controller.HouseholdCareplanForm"/>
+        <form-bean name="CaregiverAccessToEmergencyFundForm" type="com.nomis.caregiveraccesstoemergencyfund.controller.CaregiverAccessToEmergencyFundForm"/>
+        <form-bean name="CareAndSupportForm" type="com.nomis.careandsupport.controller.CareAndSupportForm"/>
+        <form-bean name="ChildEducationPerformanceAssessmentForm" type="com.nomis.educationalassessment.controller.ChildEducationPerformanceAssessmentForm"/>
+        <form-bean name="BeneficiaryStatusUpdateForm" type="com.nomis.beneficiarystatusupdate.controller.BeneficiaryStatusUpdateForm"/>
+        <form-bean name="ReferralFacilityForm" type="com.nomis.organizationunit.controller.ReferralFacilityForm"/>
+        <form-bean name="BeneficiaryServiceForm" type="com.nomis.beneficiaryservices.controller.BeneficiaryServiceForm"/>
+        <form-bean name="ListOfIndicatorsForm" type="com.nomis.reports.controller.ListOfIndicatorsForm"/>
+        <form-bean name="NutritionalAssessmentForm" type="com.nomis.nutritionalassessment.controller.NutritionalAssessmentForm"/>
+        <form-bean name="HouseholdReferralForm" type="com.nomis.referralservice.controller.HouseholdReferralForm"/>
+        <form-bean name="CareplanAchievementForm" type="com.nomis.careplanachievement.controller.CareplanAchievementForm"/>
+        <form-bean name="HivRiskAssessmentForm" type="com.nomis.hivriskassessment.controller.HivRiskAssessmentForm"/>
+        <form-bean name="HivStatusManagerForm" type="com.nomis.hivstatus.controller.HivStatusManagerForm"/>
+        <form-bean name="CaregiverServiceForm" type="com.nomis.caregiverservice.controller.CaregiverServiceForm"/>
+        <form-bean name="ChildServiceForm" type="com.nomis.childservice.controller.ChildServiceForm"/>
+        <form-bean name="AdultHouseholdMemberForm" type="com.nomis.childenrollment.controller.AdultHouseholdMemberForm"/>
+        <form-bean name="VulnerabilityStatusForm" type="com.nomis.vulnerabilitystatus.controller.VulnerabilityStatusForm"/>
+        <form-bean name="ChildEnrollmentForm" type="com.nomis.childenrollment.controller.ChildEnrollmentForm"/>
+        <form-bean name="DataUploadForm" type="com.nomis.dataupload.controller.DataUploadForm"/>
+        <form-bean name="CommunityWorkerForm" type="com.nomis.communityworker.controller.CommunityWorkerForm"/>
+        <form-bean name="SchoolGradeForm" type="com.nomis.schools.controller.SchoolGradeForm"/>
+        <form-bean name="SchoolForm" type="com.nomis.schools.controller.SchoolForm"/>
+        <form-bean name="HouseholdEnrollmentForm" type="com.nomis.householdenrollment.controller.HouseholdEnrollmentForm"/>
+        <form-bean name="PartnerForm" type="com.nomis.partner.controller.PartnerForm"/>
+        <form-bean name="SiteSetupForm" type="com.nomis.sitesetup.controller.SiteSetupForm"/>
+        <form-bean name="CommunityBasedOrganizationForm" type="com.nomis.cbo.controller.CommunityBasedOrganizationForm"/>
+        <form-bean name="LoginForm" type="com.nomis.login.controller.LoginForm"/>
+        <form-bean name="UserForm" type="com.nomis.user.controller.UserForm"/>
+        <form-bean name="OrganizationUnitForm" type="com.nomis.organizationunit.controller.OrganizationUnitForm"/>
+        <form-bean name="OrganizationUnitHirachyForm" type="com.nomis.organizationunit.controller.OrganizationUnitHirachyForm"/>
+    
+    </form-beans>
+    
+    <global-exceptions>
+    
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="welcome"  path="/login.do"/>
+        <!--<forward name="welcome"  path="/Welcome.do"/>-->
+    </global-forwards>
+
+    <action-mappings>
+        <action path="/Welcome" forward="/login.do"/>
+        <!--<action path="/Welcome" forward="/welcomeStruts.jsp"/>-->
+        <action input="/OrganizationUnitManagement/OrganizationUnitHirachy.jsp" name="OrganizationUnitHirachyForm" path="/ouhierarchy" scope="session" type="com.nomis.organizationunit.controller.OrganizationUnitHirachyAction">
+            <forward name="success" path="/OrganizationUnitManagement/OrganizationUnitHirachy.jsp"/>
+        </action>
+        <action input="/OrganizationUnitManagement/OrganizationUnit.jsp" name="OrganizationUnitForm" path="/organizationunit" scope="session" type="com.nomis.organizationunit.controller.OrganizationUnitAction">
+            <forward name="success" path="/OrganizationUnitManagement/OrganizationUnit.jsp"/>
+        </action>
+        <action input="/UserAccountManagement/User.jsp" name="UserForm" path="/user" scope="session" type="com.nomis.user.controller.UserAction">
+            <forward name="success" path="/UserAccountManagement/User.jsp"/>
+        </action>
+        <action input="/UserAccountManagement/Login.jsp" name="LoginForm" path="/login" scope="session" type="com.nomis.login.controller.LoginAction">
+            <forward name="success" path="/Nomis.jsp"/>
+            <forward name="createuser" path="/adminuser.do"/>
+            <forward name="failure" path="/UserAccountManagement/Login.jsp"/>
+        </action>
+        <action input="/OrganizationUnitManagement/CommunityBasedOrganization.jsp" name="CommunityBasedOrganizationForm" path="/cbo" scope="session" type="com.nomis.cbo.controller.CommunityBasedOrganizationAction">
+            <forward name="success" path="/OrganizationUnitManagement/CommunityBasedOrganization.jsp"/>
+        </action>
+        <action input="/EnvironmentSetup/SiteSetup.jsp" name="SiteSetupForm" path="/sitesetup" scope="session" type="com.nomis.sitesetup.controller.SiteSetupAction">
+            <forward name="success" path="/EnvironmentSetup/SiteSetup.jsp"/>
+        </action>
+        <action input="/EnvironmentSetup/Partner.jsp" name="PartnerForm" path="/partner" scope="session" type="com.nomis.partner.controller.PartnerAction">
+            <forward name="success" path="/EnvironmentSetup/Partner.jsp"/>
+        </action>
+        <action input="/DataManagement/HouseholdEnrollment.jsp" name="HouseholdEnrollmentForm" path="/householdenrollment" scope="session" type="com.nomis.householdenrollment.controller.HouseholdEnrollmentAction">
+            <forward name="success" path="/DataManagement/HouseholdEnrollment.jsp"/>
+            <forward name="NationalHouseholdAssessment" path="/nationalhouseholdenrollment.do"/>
+        </action>
+        <action input="/DataManagement/NationalHouseholdEnrollmentForm.jsp" name="NationalHouseholdEnrollmentForm" path="/nationalhouseholdenrollment" scope="session" type="com.nomis.householdenrollment.controller.NationalHouseholdEnrollmentAction">
+            <forward name="success" path="/DataManagement/NationalHouseholdEnrollmentForm.jsp"/>
+            <forward name="RevisedHouseholdAssessment" path="/householdenrollment.do"/>
+        </action>
+        <action input="/SchoolSetup/SchoolGrade.jsp" name="SchoolGradeForm" path="/schoolgrade" scope="session" type="com.nomis.schools.controller.SchoolGradeAction">
+            <forward name="success" path="/SchoolSetup/SchoolGrade.jsp"/>
+        </action>
+        <action input="/SchoolSetup/School.jsp" name="SchoolForm" path="/school" scope="session" type="com.nomis.schools.controller.SchoolAction">
+            <forward name="success" path="/SchoolSetup/School.jsp"/>
+        </action>
+        <action input="/DataManagement/CommunityWorker.jsp" name="CommunityWorkerForm" path="/communityworker" scope="session" type="com.nomis.communityworker.controller.CommunityWorkerAction"> 
+            <forward name="success" path="/DataManagement/CommunityWorker.jsp"/>
+        </action>
+        <action input="/DataManagement/DataUpload.jsp" name="DataUploadForm" path="/dataupload" scope="session" type="com.nomis.dataupload.controller.DataUploadAction">
+            <forward name="success" path="/DataManagement/DataUpload.jsp"/>
+        </action>
+        <action path="/logout" type="com.nomis.login.controller.LogoutAction">
+            <forward name="success" path="/login.do"/>
+        </action>
+        <action input="/DataManagement/ChildEnrollment.jsp" name="ChildEnrollmentForm" path="/childenrollment" scope="session" type="com.nomis.childenrollment.controller.ChildEnrollmentAction">
+            <forward name="success" path="/DataManagement/ChildEnrollment.jsp"/>
+            <forward name="NationalChildEnrollmentForm" path="/nationalchildenrollment.do"/>
+        </action>
+        <action input="/DataManagement/NationalChildEnrollmentForm.jsp" name="NationalChildEnrollmentForm" path="/nationalchildenrollment" scope="session" type="com.nomis.childenrollment.controller.NationalChildEnrollmentAction">
+            <forward name="success" path="/DataManagement/NationalChildEnrollmentForm.jsp"/>
+            <forward name="RevisedChildEnrollmentForm" path="/childenrollment.do"/>
+        </action>
+        <action input="/EnvironmentSetup/VulnerabilityStatus.jsp" name="VulnerabilityStatusForm" path="/vulnerabilitystatus" scope="session" type="com.nomis.vulnerabilitystatus.controller.VulnerabilityStatusAction">
+            <forward name="success" path="/EnvironmentSetup/VulnerabilityStatus.jsp"/>
+        </action>
+        <action input="/DataManagement/AdultHouseholdMember.jsp" name="AdultHouseholdMemberForm" path="/adulthouseholdmember" scope="session" type="com.nomis.childenrollment.controller.AdultHouseholdMemberAction">
+            <forward name="success" path="/DataManagement/AdultHouseholdMember.jsp"/>
+        </action>
+        <action input="/DataManagement/ChildService.jsp" name="ChildServiceForm" path="/childservice" scope="session" type="com.nomis.childservice.controller.ChildServiceAction">
+            <forward name="success" path="/DataManagement/ChildService.jsp"/>
+            <forward name="NationalChildServiceForm" path="/nationalchildService.do"/>
+        </action>
+        <action input="/DataManagement/NationalChildServiceForm.jsp" name="NationalChildServiceForm" path="/nationalchildService" scope="session" type="com.nomis.childservice.controller.NationalChildServiceAction">
+            <forward name="success" path="/DataManagement/NationalChildServiceForm.jsp"/>
+            <forward name="RevisedChildServiceForm" path="/childservice.do"/>
+        </action>
+        <action input="/DataManagement/CaregiverService.jsp" name="CaregiverServiceForm" path="/caregiverservice" scope="session" type="com.nomis.caregiverservice.controller.CaregiverServiceAction">
+            <forward name="success" path="/DataManagement/CaregiverService.jsp"/>
+            <forward name="NationalHouseholdServiceForm" path="/nationalhouseholdservice.do"/>
+        </action>
+        <action input="/DataManagement/NationalHouseholdServiceForm.jsp" name="NationalHouseholdServiceForm" path="/nationalhouseholdservice" scope="session" type="com.nomis.caregiverservice.controller.NationalHouseholdServiceAction">
+            <forward name="success" path="/DataManagement/NationalHouseholdServiceForm.jsp"/>
+            <forward name="RevisedHouseholdServiceForm" path="/caregiverservice.do"/>
+        </action>
+        <action input="/DataManagement/HivStatusManager.jsp" name="HivStatusManagerForm" path="/hivstatusmanager" scope="session" type="com.nomis.hivstatus.controller.HivStatusManagerAction">
+            <forward name="success" path="/DataManagement/HivStatusManager.jsp"/>
+        </action>
+        <action input="/DataManagement/HivRiskAssessmentChecklist.jsp" name="HivRiskAssessmentForm" path="/hivriskassessment" scope="session" type="com.nomis.hivriskassessment.controller.HivRiskAssessmentAction">
+            <forward name="success" path="/DataManagement/HivRiskAssessmentChecklist.jsp"/>
+            <forward name="NationalHivRiskAssessmentForm" path="/nationalhivriskassessment.do"/>
+        </action>
+        <action input="/DataManagement/CareplanAchievementChecklist.jsp" name="CareplanAchievementForm" path="/careplanachievement" scope="session" type="com.nomis.careplanachievement.controller.CareplanAchievementAction">
+            <forward name="success" path="/DataManagement/CareplanAchievementChecklist.jsp"/>
+        </action>
+        <action input="/DataManagement/HouseholdReferralForm.jsp" name="HouseholdReferralForm" path="/householdreferral" scope="session" type="com.nomis.referralservice.controller.HouseholdReferralAction">
+            <forward name="success" path="/DataManagement/HouseholdReferralForm.jsp"/>
+        </action>
+        <action input="/DataManagement/NutritionalAssessmentForm.jsp" name="NutritionalAssessmentForm" path="/nutritionalassessment" scope="session" type="com.nomis.nutritionalassessment.controller.NutritionalAssessmentAction">
+            <forward name="success" path="/DataManagement/NutritionalAssessmentForm.jsp"/>
+        </action>
+        <action input="/Reports/StatisticalReports/ListOfIndicatorsParamPage.jsp" name="ListOfIndicatorsForm" path="/listofindicators" scope="session" type="com.nomis.reports.controller.ListOfIndicatorsAction">
+            <forward name="paramPage" path="/Reports/StatisticalReports/ListOfIndicatorsParamPage.jsp"/>
+            <forward name="success" path="/Reports/StatisticalReports/ListOfIndicatorsResultPage.jsp"/>
+            <forward name="childRegister" path="/Reports/Registers/ChildEnrollmentRegister.jsp"/>
+            <forward name="cgiverRegister" path="/Reports/Registers/CaregiverEnrollmentRegister.jsp"/>
+            <forward name="householdRegister" path="/Reports/Registers/HouseholdEnrollmentRegister.jsp"/>
+        </action>
+        <action input="/EnvironmentSetup/BeneficiaryServicesSetup.jsp" name="BeneficiaryServiceForm" path="/servicesetup" scope="session" type="com.nomis.beneficiaryservices.controller.BeneficiaryServiceAction">
+            <forward name="success" path="/EnvironmentSetup/BeneficiaryServicesSetup.jsp"/>
+        </action>
+        <action input="/OrganizationUnitManagement/HealthFacilityForm.jsp" name="ReferralFacilityForm" path="/referralfacility" scope="session" type="com.nomis.organizationunit.controller.ReferralFacilityAction">
+            <forward name="success" path="/OrganizationUnitManagement/HealthFacilityForm.jsp"/>
+        </action>
+        <action input="/DataManagement/BeneficiaryStatusUpdateForm.jsp" name="BeneficiaryStatusUpdateForm" path="/beneficiarystatusupdate" scope="session" type="com.nomis.beneficiarystatusupdate.controller.BeneficiaryStatusUpdateAction">
+            <forward name="success" path="/DataManagement/BeneficiaryStatusUpdateForm.jsp"/>
+        </action>
+        
+        <action input="/DataManagement/ChildEducationPerformanceAssessmentForm.jsp" name="ChildEducationPerformanceAssessmentForm" path="/educationperformanceassessment" scope="session" type="com.nomis.educationalassessment.controller.ChildEducationPerformanceAssessmentAction">
+            <forward name="success" path="/DataManagement/ChildEducationPerformanceAssessmentForm.jsp"/>
+        </action>
+        <action input="/DataManagement/CareAndSupportChecklist.jsp" name="CareAndSupportForm" path="/careandsupport" scope="session" type="com.nomis.careandsupport.controller.CareAndSupportAction">
+            <forward name="success" path="/DataManagement/CareAndSupportChecklist.jsp"/>
+        </action>
+        <action input="/DataManagement/CaregiverAccessToEmergencyFund.jsp" name="CaregiverAccessToEmergencyFundForm" path="/caregiveraccesstoemergencyfund" scope="session" type="com.nomis.caregiveraccesstoemergencyfund.controller.CaregiverAccessToEmergencyFundAction">
+            <forward name="success" path="/DataManagement/CaregiverAccessToEmergencyFund.jsp"/>
+        </action>
+        <action input="/DataManagement/HouseholdCareplan.jsp" name="HouseholdCareplanForm" path="/householdcareplan" scope="session" type="com.nomis.householdcareplan.controller.HouseholdCareplanAction">
+            <forward name="success" path="/DataManagement/HouseholdCareplan.jsp"/>
+        </action>
+        <action input="/Maintainance/AppSetting.jsp" name="AppSettingForm" path="/settings" scope="session" type="com.nomis.maintenance.controller.AppSettingAction">
+        <forward name="success" path="/Maintainance/AppSetting.jsp"/>
+        </action>
+        <action input="/Maintainance/DatasetManagement.jsp" name="DatasetManagementForm" path="/datasetmgt" scope="session" type="com.nomis.maintenance.controller.DatasetManagementAction">
+            <forward name="success" path="/Maintainance/DatasetManagement.jsp"/>
+        </action>
+        <action input="/DataManagement/NationalHivRiskAssessmentChecklist.jsp" name="NationalHivRiskAssessmentForm" path="/nationalhivriskassessment" scope="session" type="com.nomis.hivriskassessment.controller.NationalHivRiskAssessmentAction">
+            <forward name="success" path="/DataManagement/NationalHivRiskAssessmentChecklist.jsp"/>
+            <forward name="RevisedHivRiskAssessmentForm" path="/hivriskassessment.do"/>
+        </action>
+        <action input="/ExportImport/ExportImport.jsp" name="ExportImportForm" path="/exportimport" scope="session" type="com.nomis.exportimport.controller.ExportImportAction">
+            <forward name="success" path="/ExportImport/ExportImport.jsp"/>
+        </action>
+        <action input="/ExportImport/MetadataExport.jsp" name="MetadataExportForm" path="/metadataexport" scope="session" type="com.nomis.exportimport.controller.MetadataExportAction">
+            <forward name="success" path="/ExportImport/MetadataExport.jsp"/>
+        </action>
+        <action input="/ExportImport/MetadataImport.jsp" name="MetadataImportForm" path="/metadataimport" scope="session" type="com.nomis.exportimport.controller.MetadataImportAction">
+            <forward name="success" path="/ExportImport/MetadataImport.jsp"/>
+        </action>
+        <action input="/ExportImport/XMLDataExport.jsp" name="XMLDataExportForm" path="/xmldataexport" scope="session" type="com.nomis.exportimport.controller.XMLDataExportAction">
+            <forward name="success" path="/ExportImport/XMLDataExport.jsp"/>
+        </action>
+        <action input="/ExportImport/XMLDataImport.jsp" name="XMLDataImportForm" path="/xmldataimport" scope="session" type="com.nomis.exportimport.controller.XMLDataImportAction">
+            <forward name="success" path="/ExportImport/XMLDataImport.jsp"/>
+        </action>
+        <action input="/Reports/StatisticalReports/DatimReportParamPage.jsp" name="DatimReportForm" path="/datimreport" scope="session" type="com.nomis.reports.controller.DatimReportAction">
+            <forward name="paramPage" path="/Reports/StatisticalReports/DatimReportParamPage.jsp"/>
+            <forward name="success" path="/Reports/StatisticalReports/DatimReport.jsp"/>
+        </action>
+        <action input="/Maintainance/AdhocOperationsForm.jsp" name="AdhocOperationsForm" path="/adhocoperations" scope="session" type="com.nomis.maintenance.controller.AdhocOperationsAction">
+            <forward name="success" path="/Maintainance/AdhocOperationsForm.jsp"/>
+        </action>
+        <action input="/Maintainance/BulkDeleteOperation.jsp" name="BulkDeleteOperationForm" path="/bulkdeleteoperation" scope="session" type="com.nomis.maintenance.controller.BulkDeleteOperationAction">
+            <forward name="success" path="/Maintainance/BulkDeleteOperation.jsp"/>
+        </action>
+        <action input="/Maintainance/MaintenanceHome.jsp" name="MaintenanceHomeForm" path="/maintenancehome" scope="session" type="com.nomis.maintenance.controller.MaintenanceHomeAction">
+            <forward name="success" path="/Maintainance/MaintenanceHome.jsp"/>
+        </action>
+        <action input="/Maintainance/BulkDeleteUpload.jsp" name="BulkDeleteDataUploadForm" path="/bukdeletedataupload" scope="session" type="com.nomis.maintenance.controller.BulkDeleteDataUploadAction">
+            <forward name="success" path="/Maintainance/BulkDeleteUpload.jsp"/>
+        </action>
+        <action input="/ReportSetup/CustomIndicatorsDataGenerator.jsp" name="CustomIndicatorsDataGenerationForm" path="/customindicatorsdatageneration" scope="session" type="com.nomis.reports.controller.CustomIndicatorsDataGenerationAction">
+            <forward name="success" path="/ReportSetup/CustomIndicatorsDataGenerator.jsp"/>
+        </action>
+        <action input="/ReportSetup/AnalyticsHome.jsp" name="AnalyticsHomeForm" path="/analytics" scope="session" type="com.nomis.reports.controller.AnalyticsHomeAction">
+            <forward name="success" path="/ReportSetup/AnalyticsHome.jsp"/>
+        </action>
+        <action input="/Maintainance/DatabaseDefragmenter.jsp" name="DatabaseDefragmentationForm" path="/databasedefragmentater" scope="session" type="com.nomis.maintenance.controller.DatabaseDefragmentationAction">
+            <forward name="success" path="/Maintainance/DatabaseDefragmenter.jsp"/>
+        </action>
+        <action input="/ReportSetup/DatimReportDataGenerator.jsp" name="DatimDataGenerationForm" path="/datimdatageneration" scope="session" type="com.nomis.reports.controller.DatimDataGenerationAction">
+            <forward name="success" path="/ReportSetup/DatimReportDataGenerator.jsp"/>
+        </action>
+        <action input="/Reports/Registers/OvcRegisterParamPage.jsp" name="OvcRegisterForm" path="/ovcregister" scope="session" type="com.nomis.reports.controller.OvcRegisterAction">
+            <forward name="success" path="/Reports/Registers/OvcRegisterParamPage.jsp"/>
+            <forward name="householdRegister" path="/Reports/Registers/HouseholdEnrollmentRegister.jsp"/>
+            <forward name="cgiverRegister" path="/Reports/Registers/CaregiverEnrollmentRegister.jsp"/>
+            <forward name="childregister" path="/Reports/Registers/ChildEnrollmentRegister.jsp"/>
+            <forward name="ovcServiceRegister" path="/Reports/Registers/ChildServiceRegister.jsp"/>
+            <forward name="householdServiceRegister" path="/Reports/Registers/HouseholdServiceRegister.jsp"/>
+            <forward name="hraRegister" path="/Reports/Registers/HIVRiskAssessmentRegister.jsp"/>
+            <forward name="careAndSupportRegister" path="/Reports/Registers/CareAndSupportRegister.jsp"/>
+            <forward name="nutritionAssessmentRegister" path="/Reports/Registers/NutritionAssessmentRegister.jsp"/>
+            <forward name="caregiverAccessToEmergencyFundRegister" path="/Reports/Registers/CaregiverAccessToEmergencyFundRegister.jsp"/>
+            <forward name="careplanAchievementRegister" path="/Reports/Registers/CareplanAchievementRegister.jsp"/>
+            <forward name="householdCareplanRegister" path="/Reports/Registers/HouseholdCareplanRegister.jsp"/>
+            <forward name="referralRegister" path="/Reports/Registers/HouseholdReferralRegister.jsp"/>
+            <forward name="cepaRegister" path="/Reports/Registers/EducationalPerformanceAssessmentRegister.jsp"/>
+            <forward name="monthlySummaryForm" path="/Reports/StatisticalReports/MonthlySummaryForm.jsp"/>
+            <forward name="facilityovcofferregister" path="/Reports/Registers/FacilityOvcOfferRegister.jsp"/>
+        </action>
+        <action input="/Reports/StatisticalReports/CustomIndicatorsReport.jsp" name="CustomIndicatorReportForm" path="/customIndicatorsreport" scope="session" type="com.nomis.reports.controller.CustomIndicatorsReportAction">
+            <forward name="paramPage" path="/Reports/StatisticalReports/CustomIndicatorsReport.jsp"/>
+        </action>
+        <!--<action input="/Maintainance/EnrollmentStatusUpdateManager.jsp" name="EnrollmentStatusManagementForm" path="/enrollmentstatusupdate" scope="session" type="com.nomis.maintenance.controller.EnrollmentStatusManagementAction">
+            <forward name="success" path="/Maintainance/EnrollmentStatusUpdateManager.jsp"/>
+        </action>-->
+        <action input="/DataManagement/EnrollmentStatusManagement.jsp" name="EnrollmentStatusManagementForm" path="/enrollmentstatusmanagement" scope="session" type="com.nomis.enrollmentstatus.controller.EnrollmentStatusManagementAction">
+            <forward name="success" path="/DataManagement/EnrollmentStatusManagement.jsp"/>
+        </action>
+        <action input="/Maintainance/EnrollmentStatusUpdateManager.jsp" name="EnrollmentStatusUpdateForm" path="/enrollmentstatusupdate" scope="session" type="com.nomis.maintenance.controller.EnrollmentStatusUpdateAction">
+            <forward name="success" path="/Maintainance/EnrollmentStatusUpdateManager.jsp"/>
+        </action>
+        <action input="/Maintainance/EnrollmentStreamMerger.jsp" name="EnrollmentStreamMergeForm" path="/enrollmentstreammerge" scope="session" type="com.nomis.maintenance.controller.EnrollmentStreamMergeAction">
+            <forward name="success" path="/Maintainance/EnrollmentStreamMerger.jsp"/>
+        </action>
+        <action input="/UserAccountManagement/UserRoleSetup.jsp" name="UserRoleSetupForm" path="/userrole" scope="session" type="com.nomis.userrole.controller.UserRoleSetupAction">
+            <forward name="success" path="/UserAccountManagement/UserRoleSetup.jsp"/>
+        </action>
+        <action input="/UserAccountManagement/AdminUser.jsp" name="AdminUserForm" path="/adminuser" scope="session" type="com.nomis.user.controller.AdminUserAtion">
+            <forward name="success" path="/Nomis.jsp"/>
+            <forward name="createuser" path="/UserAccountManagement/AdminUser.jsp"/>
+        </action>
+        <action input="/Maintainance/HouseholdMergeOperations.jsp" name="HouseholdMergeOperationForm" path="/householdmergeoperation" scope="session" type="com.nomis.dataadministration.controller.HouseholdMergeOperationAction">
+            <forward name="success" path="/Maintainance/HouseholdMergeOperations.jsp"/>
+        </action>
+        <action input="/ExportImport/DataExportSummary.jsp" name="ExportSummaryReportForm" path="/exportsummaryreport" scope="session" type="com.nomis.exportimport.controller.ExportSummaryReportAction">
+            <forward name="success" path="/ExportImport/DataExportSummary.jsp"/>
+            </action>
+        <action input="/Maintainance/AdultMembersMergeOperation.jsp" name="AdultMemberMergeOperationForm" path="/adultmembermergeoperation" scope="session" type="com.nomis.dataadministration.controller.AdultMemberMergeOperationAction">
+            <forward name="success" path="/Maintainance/AdultMembersMergeOperation.jsp"/>
+            </action>
+        <action input="/Reports/StatisticalReports/MonthlySummaryForm.jsp" name="OvcMthlySummaryForm" path="/monthlysummaryform" scope="session" type="com.nomis.reports.controller.OvcMthlySummaryAction">
+                <forward name="success" path="/Reports/StatisticalReports/MonthlySummaryForm.jsp"/>
+        </action>
+        <action input="/DataManagement/FacilityOvcConsentForm.jsp" name="FacilityOvcConsentForm" path="/facilityconsentform" scope="session" type="com.nomis.facilityovcconsent.controller.FacilityOvcConsentAction">
+            <forward name="success" path="/DataManagement/FacilityOvcConsentForm.jsp"/>
+            </action>
+        <action path="/ajaxaction" type="com.nomis.ajax.controller.StrutsAjaxAction"/>
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/myapp/struts/ApplicationResource"/>    
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>

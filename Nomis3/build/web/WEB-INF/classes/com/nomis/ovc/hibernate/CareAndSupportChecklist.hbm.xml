@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.CareAndSupportChecklist" table="APP.CAREANDSUPPORTCHECKLIST">
+      <id name="recordId" column="RECORDID" type="int">
+        <generator class="identity"/>
+    </id>
+    <property name="beneficiaryId" column="BENEFICIARYID" type="string"/>
+    <property name="childHasFever" column="CHILDHASFEVER" type="int"/>
+    <property name="childHasNightSweat" column="CHILDHASNIGHTSWEAT" type="int"/>
+    <property name="childHasSwelling" column="CHILDHASSWELLING" type="int"/>
+    <property name="childLossinWeight" column="CHILDLOSSINWEIGHT" type="int"/>
+    <property name="coughSymptom" column="COUGHSYMPTOM" type="int"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="dateOfAssessment" column="DATEOFASSESSMENT" type="date"/>
+    <property name="dateOfNextAppointment" column="DATEOFNEXTAPPOINTMENT" type="date"/>
+    <property name="dateOfViralLoadSampleCollection" column="DATEOFVIRALLOADTEST" type="date"/>
+    
+    <property name="dateOfLastDrugPickup" column="DATEOFLASTDRUGPICKUP" type="date"/>
+    <property name="enrolledOnTreatment" column="ENROLLEDONTREATMENT" type="int"/>
+    <property name="facilityId" column="FACILITYID" type="string"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+    <property name="missedARVsRecently" column="MISSEDARVSRECENTLY" type="int"/>
+    <property name="monthsOfTransportationSupport" column="MONTHSOFTRANSPORTATIONSUPPORT" type="int"/>
+    
+    <property name="numberOfDaysOfRefill" column="NUMBEROFDAYSOFREFILL" type="int"/>
+    <property name="pickedUpMedication" column="PICKEDUPMEDICATION" type="int"/>
+    <property name="reasonViralLoadNotDone" column="REASONVIRALLOADNOTDONE" type="string"/>
+    <property name="reasonsPeopleSkipARV" column="REASONSPEOPLESKIPARV" type="string"/>
+    <property name="receivedTransportationSupport" column="RECEIVEDTRANSPORTATIONSUPPORT" type="int"/>
+    <property name="recordedBy" column="RECORDEDBY" type="string"/>
+    <property name="soresRashPainExperience" column="SORESRASHPAINEXPERIENCE" type="int"/>
+    <property name="viralLoadResult" column="VIRALLOADRESULT" type="int"/>
+    <property name="viralLoadResultKnown" column="VIRALLOADRESULTKNOWN" type="int"/>
+    <property name="viralLoadTestDone" column="VIRALLOADTESTDONE" type="int"/>
+    <property name="volunteerName" column="VOLUNTEERNAME" type="string"/>
+    <property name="dateOfViralLoadResult" column="DATEOFVIRALLOADRESULT" type="date"/>
+  </class>
+</hibernate-mapping>

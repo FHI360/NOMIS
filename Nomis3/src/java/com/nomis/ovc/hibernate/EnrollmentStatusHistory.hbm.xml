@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.EnrollmentStatusHistory" table="APP.ENROLLMENTSTATUSHISTORY">
+      <id name="recordId" column="RECORDID">
+        <generator class="identity"/>
+    </id>
+    <property name="beneficiaryId" column="BENEFICIARYID" type="string"/>
+    <property name="beneficiaryType" column="BENEFICIARYTYPE" type="int"/>
+    <property name="currentAge" column="CURRENTAGE" type="int"/>
+    <property name="currentAgeUnit" column="CURRENTAGEUNIT" type="int"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="dateOfEnrollmentStatus" column="DATEOFENROLLMENTSTATUS" type="date"/>
+    <property name="dateOfHivStatus" column="DATEOFHIVSTATUS" type="date"/>
+    <property name="enrolledOnTreatment" column="ENROLLEDONTREATMENT" type="int"/>
+    <property name="enrollmentStatus" column="ENROLLMENTSTATUS" type="int"/>
+    <property name="facilityId" column="FACILITYID" type="string"/>
+    <property name="hivStatus" column="HIVSTATUS" type="int"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="pointOfUpdate" column="POINTOFUPDATE" type="int"/>
+    <property name="recordedBy" column="RECORDEDBY" type="string"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.HouseholdService" table="APP.HOUSEHOLDSERVICE">
+      <id name="id" column="ID" type="integer">
+        <generator class="identity" />
+    </id>
+    <property name="beneficiaryId" column="BENEFICIARYID" type="string"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="healthServices" column="HEALTHSERVICES" type="string"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="numberOfServices" column="NUMBEROFSERVICES" type="int"/>
+    <property name="recordedBy" column="RECORDEDBY" type="string"/>
+    <property name="referralServices" column="REFERRALSERVICES" type="string"/>
+    <property name="safetyServices" column="SAFETYSERVICES" type="string"/>
+    <property column="GBVSERVICES" name="gbvServices" type="string"/>
+    <property column="SCHOOLEDSERVICES" name="schoolServices" type="string"/>
+    <property name="serviceDate" column="SERVICEDATE" type="date"/>
+    <property name="stableServices" column="STABLESERVICES" type="string"/>
+    <property name="ageAtService" column="AGEATSERVICE" type="int"/>
+    <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+    <property column="COMMUNITYWORKER" name="communityWorkerId" type="string"/>
+  </class>
+</hibernate-mapping>

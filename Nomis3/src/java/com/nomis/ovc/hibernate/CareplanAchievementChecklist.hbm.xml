@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.CareplanAchievementChecklist" table="APP.CAREPLANACHIEVEMENTCHECKLIST">
+      <id name="recordId" column="RECORDID" type="int">
+        <generator class="identity"/>
+    </id>
+    <property name="allChildrenHaveBirthCert" column="ALLCHILDRENHAVEBIRTHCERT" type="int"/>
+    <property name="cgiversEconomicActivity" column="CGIVERSECONOMICACTIVITY" type="int"/>
+    <property name="childrenEnrolledInSchool" column="CHILDRENENROLLEDINSCHOOL" type="int"/>
+    <property name="childrenHivStatusknown" column="CHILDRENHIVSTATUSKNOWN" type="int"/>
+    <property name="childrenNotUndernourished" column="CHILDRENNOTUNDERNOURISHED" type="int"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="dateOfAssessment" column="DATEOFASSESSMENT" type="date"/>
+    <property name="documentedViralLoadResult" column="DOCUMENTEDVIRALLOADRESULT" type="int"/>
+    <property name="emotionalSupportTeamIdentification" column="EMOTIONALSUPPORTTEAMIDENTIFICATION" type="int"/>
+    <property name="hhUniqueId" column="HHUNIQUEID" type="string"/>
+    <property name="hivPosAdolscentsLinked" column="HIVPOSADOLSCENTSLINKED" type="int"/>
+    <property name="hivPreventionKnowledge" column="HIVPREVENTIONKNOWLEDGE" type="int"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+    <property name="recordedBy" column="RECORDEDBY" type="string"/>
+    <property name="regularSchoolAttendance" column="REGULARSCHOOLATTENDANCE" type="int"/>
+    <property name="score" column="SCORE" type="int"/>
+    <property name="stableAdultInHousehold" column="STABLEADULTINHOUSEHOLD" type="int"/>
+    <property name="violenceIncidenceReport" column="VIOLENCEINCIDENCEREPORT" type="int"/>
+    <property name="volunteerName" column="VOLUNTEERNAME" type="string"/>
+    
+    <property name="adolescentInVoctraining" column="ADOLINVOCTRAINING" type="int"/>
+    <property name="caregiverDisclosedHivStatus" column="CAREGIVERDISCLOSEDHIVSTATUS" type="int"/>
+    <property name="cgiversCompletedParentingCourse" column="CAREGIVERSCOMPLETEDPARENTINGCOURSE" type="int"/>
+    <property name="childHeadedHhLinkedToServices" column="CHILDHEADEDHHLINKEDTOSERVICES" type="int"/>
+    <property name="childWithdrawnOrSad" column="CHILDWITHDRAWNORSAD" type="int"/>
+    <property name="childrenEnrolledInEarlyChildCare" column="CHILDRENENROLLEDINEARLYCHILDCARE" type="int"/>
+    <property name="childrenInHhHaveAdequateHousingAndSpace" column="CHILDRENINHHHAVEADEQUATEHOUSINGANDSPACE" type="int"/>
+    <property name="childrenInNeeedOfHltProvidedHltServices" column="CHILDRENINNEEDOFHLTPROVIDEDHLTSERVICES" type="int"/>
+    <!--<property name="childrenReferredForHivTesting" column="CHILDRENREFERREDFORHIVTESTING" type="int"/>-->
+    <property name="childrenReferredReceivedTestingServices" column="CHILDRENREFERREDRECEIVEDTESTINGSERVICES" type="int"/>
+    <property name="hhDemonstratedAbilityToMeetGoals" column="HHDEMONSTRATEDABILITYTOMEETGOALS" type="int"/>
+    <property name="hhGraduated" column="HHGRADUATED" type="int"/>
+    <property name="vcAtRiskReferredForChildProtection" column="VCATRISKREFERREDFORCHILDPROTECTION" type="int"/>
+    
+  </class>
+</hibernate-mapping>

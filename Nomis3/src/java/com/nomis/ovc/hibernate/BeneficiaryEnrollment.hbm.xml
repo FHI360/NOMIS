@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.BeneficiaryEnrollment" table="APP.BENEFICIARYENROLLMENT">
+    <id name="beneficiaryId" column="BENEFICIARYID" type="string"/>
+    <property name="ageAtBaseline" column="AGEATBASELINE" type="int"/>
+    <property name="ageUnitAtBaseline" column="AGEUNITATBASELINE" type="int"/>
+    <property name="beneficiaryType" column="BENEFICIARYTYPE" type="int"/>
+    <property name="currentAge" column="CURRENTAGE" type="int"/>
+    <property name="currentAgeUnit" column="CURRENTAGEUNIT" type="int"/>
+    <property name="dateOfEnrollment" column="DATEOFENROLLMENT" type="date"/>
+    <property name="enrollmentId" column="ENROLLMENTID" type="string"/>
+    <property name="hhUniqueId" column="HHUNIQUEID" type="string"/>
+    <property name="sex" column="SEX" type="string"/>
+  </class>
+</hibernate-mapping>

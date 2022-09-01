@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.exportimport.DataImportFileUploadManager" table="APP.DATAIMPORTFILEUPLOAD">
+      <id name="recordId" column="RECORDID" type="integer">
+          <generator class="identity"/>
+      </id>
+      <property name="dateImportCompleted" column="DATEIMPORTCOMPLETED" type="date"/>
+      <property name="dateOfUpload" column="DATEOFUPLOAD" type="date"/>
+      <property name="importFileName" column="IMPORTFILENAME" type="string"/>
+      <property name="importFilePath" column="IMPORTDIRECTORYPATH" type="string"/>
+      <property name="importStatus" column="IMPORTSTATUS" type="int"/>
+      <property name="partnerCode" column="PARTNERCODE" type="string"/>
+      <property name="timeImportCompleted" column="TIMEIMPORTCOMPLETED" type="string"/>
+      <property name="userName" column="USERNAME" type="string"/>
+      <property name="selectedTableCodes" column="SELECTEDTABLECODES" type="string"/>
+      <property name="importOptions" column="IMPORTOPTIONS" type="string"/>
+      <property name="lastProcessedTableIndex" column="LASTPROCESSEDTABLEINDEX" type="int"/>
+  </class>
+</hibernate-mapping>

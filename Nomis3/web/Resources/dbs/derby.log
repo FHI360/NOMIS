@@ -1,0 +1,14 @@
+2019-11-17 09:33:12.496 GMT : Apache Derby Network Server - 10.6.2.1 - (999685) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+2019-11-17 09:33:13.332 GMT:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.6.2.1 - (999685): instance a816c00e-016e-78b5-83d2-0000194cbe1b 
+on database directory C:\Nomis3\dbs\nomis3db  with class loader sun.misc.Launcher$AppClassLoader@11b86e7 
+Loaded from file:/C:/Program%20Files%20(x86)/glassfish-3.1.1/javadb/lib/derby.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_16-b01
+Database Class Loader started - derby.database.classpath=''
+
+2019-11-17 09:33:24.394 GMT:
+Shutting down instance a816c00e-016e-78b5-83d2-0000194cbe1b with class loader sun.misc.Launcher$AppClassLoader@11b86e7 
+----------------------------------------------------------------
+2019-11-17 09:33:24.538 GMT Thread[DRDAConnThread_3,5,main] (DATABASE = nomis3db), (DRDAID = {2}), Database 'nomis3db' shutdown.

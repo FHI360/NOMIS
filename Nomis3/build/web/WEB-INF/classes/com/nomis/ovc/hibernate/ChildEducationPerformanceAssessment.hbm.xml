@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.ChildEducationPerformanceAssessment" table="APP.CHILDEDUCATIONPERFORMANCEASSESSMENT">
+      <id name="recordId" column="RECORDID" type="int">
+        <generator class="identity"/>
+    </id>
+    <property name="ovcId" column="OVCID" type="string"/>
+    <property name="childHasInjuriesOrMarks" column="CHILDHASINJURIESORMARKS" type="int"/>
+    <property name="childIsSociallyWithdrawn" column="CHILDISSOCIALLYWITHDRAWN" type="int"/>
+    <property name="childMissVocTraining" column="CHILDMISSVOCTRAINING" type="int"/>
+    <property name="childProgressedInSchool" column="CHILDPROGRESSEDINSCHOOL" type="int"/>
+    <property name="classTeacherComment" column="CLASSTEACHERCOMMENT" type="string"/>
+    <property name="classTeacherUid" column="CLASSTEACHERNAME" type="string"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="dateOfAssessment" column="DATEOFASSESSMENT" type="date"/>
+    <property name="earlyResumptionInSchool" column="EARLYRESUMPTIONINSCHOOL" type="int"/>
+    <property name="earlyResumptionInTrainingCenter" column="EARLYRESUMPTIONINTRAININGCENTER" type="int"/>
+    <property name="goodPerformanceInLastExam" column="GOODPERFORMANCEINLASTEXAM" type="int"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+    <property name="recordedBy" column="RECORDEDBY" type="string"/>
+    <property name="regularSchoolAttendance" column="REGULARSCHOOLATTENDANCE" type="int"/>
+    <property name="signsOfFatigueAndTiredness" column="SIGNSOFFATIGUEANDTIREDNESS" type="int"/>
+    <property name="steadyImprovementInClassWork" column="STEADYIMPROVEMENTINCLASSWORK" type="int"/>
+    <property name="steadyImprovementInVocWork" column="STEADYIMPROVEMENTINVOCWORK" type="int"/>
+    <property name="volunteerName" column="VOLUNTEERNAME" type="string"/>
+    <property name="reasonsChildMissedSchoolOrVocTraining" column="REASONSCHILDMISSEDSCHOOLORVOCTRAINING" type="string"/>
+  </class>
+</hibernate-mapping>

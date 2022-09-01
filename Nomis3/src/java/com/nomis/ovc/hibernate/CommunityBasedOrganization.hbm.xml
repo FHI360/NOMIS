@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.CommunityBasedOrganization" table="APP.COMMUNITYBASEDORGANIZATION">
+      <id name="uniqueId" column="UNIQUEID" type="string"/>
+    <property name="address" column="ADDRESS" type="string"/>
+    <property name="cboCode" column="CBOCODE" type="string"/>
+    <property name="cboName" column="CBONAME" type="string"/>
+    <property name="contactPersonEmail" column="CONTACTPERSONEMAIL" type="string"/>
+    <property name="contactPersonName" column="CONTACTPERSONNAME" type="string"/>
+    <property name="contactPersonPhone" column="CONTACTPERSONPHONE" type="string"/>
+    <property name="dataExchangeId" column="DATAEXCHANGEID" type="string"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="latitude" column="LATITUDE" type="double"/>
+    <property name="longitude" column="LONGITUDE" type="double"/>
+    <property name="level2OuId" column="LEVEL2OUID" type="string"/>
+    <property name="assignedLevel3OuIds" column="ASSIGNEDLEVEL3OUIDS" type="string"/>
+    <property name="services" column="SERVICES" type="string"/>
+    <property name="legacyId" column="LEGACYID" type="string"/>
+  </class>
+</hibernate-mapping>

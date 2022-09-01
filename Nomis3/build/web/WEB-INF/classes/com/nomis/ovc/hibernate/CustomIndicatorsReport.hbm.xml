@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.CustomIndicatorsReport" table="APP.CUSTOMINDICATORSREPORT">
+      <id name="recordId" column="RECORDID" type="int">
+        <generator class="identity"/>
+    </id>
+      <property name="cboId" column="CBOID" type="string"/>
+      <property name="dateCreated" column="DATECREATED" type="date"/>
+      <property name="female10to14" column="FEMALE10TO14" type="int"/>
+      <property name="female15to17" column="FEMALE15TO17" type="int"/>
+      <property name="female18to24" column="FEMALE18TO24" type="int"/>
+      <property name="female1to4" column="FEMALE1TO4" type="int"/>
+      <property name="female5to9" column="FEMALE5TO9" type="int"/>
+      <property name="female25Plus" column="FEMALE25PLUS" type="int"/>
+      <property name="femaleLessThan1" column="FEMALELESSTHAN1" type="int"/>
+      <property name="femaleTotal" column="FEMALETOTAL" type="int"/>
+      <property name="grandTotal" column="GRANDTOTAL" type="int"/>
+      <property name="indicatorName" column="INDICATORNAME" type="string"/>
+      <property name="level2OuId" column="LEVEL2OUID" type="string"/>
+      <property name="level3OuId" column="LEVEL3OUID" type="string"/>
+      <property name="level4OuId" column="LEVEL4OUID" type="string"/>
+      <property name="male10to14" column="MALE10TO14" type="int"/>
+      <property name="male15to17" column="MALE15TO17" type="int"/>
+      <property name="male18to24" column="MALE18TO24" type="int"/>
+      <property name="male1to4" column="MALE1TO4" type="int"/>
+      <property name="male25Plus" column="MALE25PLUS" type="int"/>
+      <property name="male5to9" column="MALE5TO9" type="int"/>
+      <property name="maleLessThan1" column="MALELESSTHAN1" type="int"/>
+      <property name="male18PlusChildren" column="MALE18PLUSCHILDREN" type="int"/>
+      <property name="female18PlusChildren" column="FEMALE18PLUSCHILDREN" type="int"/>
+      <property name="maleTotal" column="MALETOTAL" type="int"/>
+      <property name="merCode" column="MERCODE" type="string"/>
+      <property name="otherDisaggregation" column="OTHERDISAGGREGATION" type="string"/>
+      <property name="reportPeriod" column="REPORTPERIOD" type="string"/>
+      <property name="partnerCode" column="PARTNERCODE" type="string"/>
+      <property name="userName" column="USERNAME" type="string"/>
+  </class>
+</hibernate-mapping>

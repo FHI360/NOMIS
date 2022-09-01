@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.HouseholdCareplan" table="APP.HOUSEHOLDCAREPLAN">
+      <id name="recordId" column="RECORDID" type="int">
+        <generator class="identity"/>
+    </id>
+    <property name="beneficiaryId" column="BENEFICIARYID" type="string"/>
+    <property name="careplanDate" column="CAREPLANDATE" type="date"/>
+    <property name="dateCreated" column="" type="date"/>
+    <property name="followupForHealthServices" column="FOLLOWUPFORHEALTHSERVICES" type="string"/>
+    <property name="followupForSafetyServices" column="FOLLOWUPFORSAFETYSERVICES" type="string"/>
+    <property name="followupForSchooledServices" column="FOLLOWUPFORSCHOOLEDSERVICES" type="string"/>
+    <property name="followupForStableServices" column="FOLLOWUPFORSTABLESERVICES" type="string"/>
+    <property name="healthServicesToBeProvided" column="HEALTHSERVICESTOBEPROVIDED" type="string"/>
+    <property name="householdHealthGoals" column="HOUSEHOLDHEALTHGOALS" type="string"/>
+    <property name="householdSafetyGoals" column="HOUSEHOLDSAFETYGOALS" type="string"/>
+    <property name="householdSchooledGoals" column="HOUSEHOLDSCHOOLEDGOALS" type="string"/>
+    <property name="householdStableGoals" column="HOUSEHOLDSTABLEGOALS" type="string"/>
+    <property name="identifiedHealthIssues" column="IDENTIFIEDHEALTHISSUES" type="string"/>
+    <property name="identifiedSafetyIssues" column="IDENTIFIEDSAFETYISSUES" type="string"/>
+    <property name="identifiedSchooledIssues" column="IDENTIFIEDSCHOOLEDISSUES" type="string"/>
+    <property name="identifiedStableIssues" column="IDENTIFIEDSTABLEISSUES" type="string"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+    <property name="priorityHealthGoals" column="PRIORITYHEALTHGOALS" type="string"/>
+    <property name="prioritySafetyGoals" column="PRIORITYSAFETYGOALS" type="string"/>
+    <property name="prioritySchooledGoals" column="PRIORITYSCHOOLEDGOALS" type="string"/>
+    <property name="priorityStableGoals" column="PRIORITYSTABLEGOALS" type="string"/>
+    <property name="recordedBy" column="RECORDEDBY" type="string"/>
+    <property name="safetyServicesToBeProvided" column="SAFETYSERVICESTOBEPROVIDED" type="string"/>
+    <property name="schooledServicesToBeProvided" column="SCHOOLEDSERVICESTOBEPROVIDED" type="string"/>
+    <property name="stableServicesToBeProvided" column="STABLESERVICESTOBEPROVIDED" type="string"/>
+    <property name="timeFrameForHealthServices" column="TIMEFRAMEFORHEALTHSERVICES" type="string"/>
+    <property name="timeFrameForSafetyServices" column="TIMEFRAMEFORSAFETYSERVICES" type="string"/>
+    <property name="timeFrameForSchooledServices" column="TIMEFRAMEFORSCHOOLEDSERVICES" type="string"/>
+    <property name="timeFrameForStableServices" column="TIMEFRAMEFORSTABLESERVICES" type="string"/>
+    <property name="volunteerName" column="VOLUNTEERNAME" type="string"/>
+  </class>
+</hibernate-mapping>

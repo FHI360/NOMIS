@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.SiteSetup" table="APP.SITESETUP">
+    <id name="userName" column="USERNAME" type="string"/>
+    <property name="createdBy" column="CREATEDBY" type="string"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="level2OuId" column="LEVEL2OUID" type="string"/>
+    <property name="level3OuId" column="LEVEL3OUID" type="string"/>
+    <property name="level4OuId" column="LEVEL4OUID" type="string"/>
+    <property name="cboId" column="CBOID" type="string"/>
+    <property name="partnerCode" column="PARTNERCODE" type="string"/>
+  </class>
+</hibernate-mapping>

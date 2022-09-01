@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.Ovc" table="APP.CHILDENROLLMENT">
+      <id name="ovcId" column="OVCID" type="string"/>
+      <property name="hhUniqueId" column="HHUNIQUEID" type="string"/>
+    <property name="ageAtBaseline" column="AGEATBASELINE" type="int"/>
+    <property name="ageUnitAtBaseline" column="AGEUNITATBASELINE" type="int"/>
+    <property name="baselineBirthRegistrationStatus" column="BASELINEBIRTHREGISTRATIONSTATUS" type="int"/>
+    <property name="baselineHivStatus" column="BASELINEHIVSTATUS" type="int"/>
+    <property name="baselineSchoolStatus" column="BASELINESCHOOLSTATUS" type="int"/>
+    <property name="caregiverId" column="CAREGIVERID" type="string"/>
+    <property name="caregiverRelationship" column="CAREGIVERRELATIONSHIP" type="int"/>
+    <property name="childHasCasePlan" column="CHILDHASCASEPLAN" type="int"/>
+    <property name="communityWorkerName" column="COMMUITYWORKERNAME" type="string"/>
+    <property name="currentAge" column="CURRENTAGE" type="int"/>
+    <property name="currentAgeUnit" column="CURRENTAGEUNIT" type="int"/>
+    <property name="currentBirthRegistrationStatus" column="CURRENTBIRTHREGISTRATIONSTATUS" type="int"/>
+    <property name="currentEnrollmentStatus" column="CURRENTENROLLMENTSTATUS" type="int"/>
+    <property name="currentHivStatus" column="CURRENTHIVSTATUS" type="int"/>
+    <property name="currentSchoolStatus" column="CURRENTSCHOOLSTATUS" type="int"/>
+    <property name="dateOfCurrentSchoolStatus" column="DATEOFCURRENTSCHOOLSTATUS" type="date"/>
+    <property name="dateCasePlanDeveloped" column="DATECASEPLANDEVELOPED" type="date"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="dateEnrolledOnTreatment" column="DATEENROLLEDONTREATMENT" type="date"/>
+    <property name="dateOfBaselineHivStatus" column="DATEOFBASELINEHIVSTATUS" type="date"/>
+    <property name="dateOfCurrentBirthRegStatus" column="DATEOFCURRENTBIRTHREGSTATUS" type="date"/>
+    <property name="dateOfCurrentHivStatus" column="DATEOFCURRENTHIVSTATUS" type="date"/>
+    <property name="dateOfCurrentEnrollmentStatus" column="DATEOFCURRENTSTATUS" type="date"/>
+    <property name="dateOfEnrollment" column="DATEOFENROLLMENT" type="date"/>
+    <property name="enrolledOnTreatment" column="CHILDENROLLEDONTREATMENT" type="int"/>
+    <property name="enrollmentId" column="ENROLLMENTID" type="string"/>
+    <property name="hivTreatmentFacilityId" column="HIVTREATMENTFACILITYID" type="string"/>
+    <property name="treatmentId" column="TREATMENTID" type="string"/>
+    <property name="firstName" column="FIRSTNAME" type="string"/>
+    <property name="height" column="HEIGHT" type="double"/>
+    <property name="weight" column="WEIGHT" type="double"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+    <property name="phoneNumber" column="PHONENUMBER" type="string"/>
+    <property name="recordedBy" column="RECORDEDBY" type="string"/>
+    <property name="schoolGrade" column="SCHOOLGRADE" type="string"/>
+    <property name="schoolName" column="SCHOOLNAME" type="string"/>
+    <property name="sex" column="SEX" type="string"/>
+    <property name="sourceOfInfo" column="SOURCEOFINFO" type="int"/>
+    <property name="surname" column="SURNAME" type="string"/>
+    <property name="mainVulnerabilityStatusCode" column="MAINVULNERABILITYSTATUSCODE" type="string"/>
+    <property name="vulnerabilityStatusCode" column="VULNERABILITYSTATUS" type="string"/>
+    <property name="legacyId" column="LEGACYID" type="string"/>
+    <property name="enrollmentSetting" column="ENROLLMENTSETTING" type="int"/>
+    <!--<property name="abuseAndExploitation" column="ABUSEANDEXPLOITATION" type="int"/>
+    <property name="care" column="CARE" type="int"/>
+    <property name="developmentAndPerformance" column="DEVELOPMENTANDPERFORMANCE" type="int"/>
+    <property name="educationAndWork" column="EDUCATIONANDWORK" type="int"/>
+    <property name="emotionalHealth" column="EMOTIONALHEALTH" type="int"/>
+    <property name="foodSecurity" column="FOODSECURITY" type="int"/>
+    <property name="healthCareServices" column="HEALTHCARESERVICES" type="int"/>
+    <property name="legalProtection" column="LEGALPROTECTION" type="int"/>
+    <property name="nutritionAndGrowth" column="NUTRITIONANDGROWTH" type="int"/>
+    <property name="shelter" column="SHELTER" type="int"/>
+    <property name="socialBehaviour" column="SOCIALBEHAVIOUR" type="int"/>
+    <property name="wellness" column="WELLNESS" type="int"/> -->
+  </class>
+</hibernate-mapping>

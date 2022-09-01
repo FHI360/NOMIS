@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.UserActivityTracker" table="APP.USERACTIVITYTRACKER">
+      <id name="recordId" column="RECORDID" type="int">
+        <generator class="identity" />
+    </id>
+    <property name="dateAndTime" column="DATEANDTIME" type="string"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="description" column="DESCRIPTION" type="string"/>
+    <property name="userAction" column="USERACTION" type="string"/>
+    <property name="userName" column="USERNAME" type="string"/>
+    <property name="markedForDelete" column="MARKEDFORDELETE" type="int"/>
+  </class>
+</hibernate-mapping>

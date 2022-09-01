@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.reports.utils.DatimReportTemplate" table="APP.DATIMREPORT">
+      <id column="RECORDID" name="recordId" type="int">
+      <generator class="identity"/>
+    </id>
+    <property column="CBO" name="cbo" type="string"/>
+    <property column="LEVEL2OU" name="level2Ou" type="string"/>
+    <property column="LEVEL3OU" name="level3Ou" type="string"/>
+    <property column="DPERIOD" name="period" type="string"/>
+    <property column="PARTNERCODE" name="partnerCode" type="string"/>
+    <property column="PARTNERNAME" name="partnerName" type="string"/>
+    <property column="ENROLLEDONART" name="enrolledOnART" type="int"/>
+    <property column="NOTENROLLEDONART" name="notEnrolledOnART" type="int"/>
+    <property column="HIV_STATNUMERATOR" name="hiv_statNumerator" type="int"/>
+    <property column="OTHERREASONS" name="otherReasons" type="int"/>
+    <property column="TOTALNEGATIVE" name="totalNegative" type="int"/>
+    <property column="TOTALPOSITIVE" name="totalPositive" type="int"/>
+    <property column="TOTALUNKNOWN" name="totalUnknown" type="int"/>
+    <property column="TESTNOTINDICATED" name="testNotIndicated" type="int"/>
+    <property column="OVC_SERVACTIVE" name="ovc_servActive" type="int"/>
+    <property column="OVC_SERVGRADUATED" name="ovc_servGraduated" type="int"/>
+    <property column="OVC_SERVTRANSFERED" name="ovc_servTransfered" type="int"/>
+    <property column="OVC_SERVEXITEDWITHOUTGRADUATION" name="ovc_servExitedWithoutGraduation" type="int"/>
+    <property column="OVC_SERVNUMERATOR" name="ovc_servNumerator" type="int"/>
+    <property column="OVC_SERVLESSTHAN1" name="ovc_servLessThan1" type="int"/>
+    <property column="OVC_SERV1TO4" name="ovc_serv1To4" type="int"/>
+    <property column="OVC_SERV5TO9" name="ovc_serv5To9" type="int"/>
+    <property column="OVC_SERV1TO9" name="ovc_serv1To9" type="int"/>
+    <property column="F10TO14" name="ovc_servFemale10To14" type="int"/>
+    <property column="F15TO17" name="ovc_servFemale15To17" type="int"/>
+    <property column="F18TO24" name="ovc_servFemale18To24" type="int"/>
+    <property column="F25PLUS" name="ovc_servFemale25AndAbove" type="int"/>
+    <property column="M10TO14" name="ovc_servMale10To14" type="int"/>
+    <property column="M15TO17" name="ovc_servMale15To17" type="int"/>
+    <property column="M18TO24" name="ovc_servMale18To24" type="int"/>
+    <property column="M25PLUS" name="ovc_servMale25AndAbove" type="int"/>
+    <property column="DATECREATED" name="dateCreated" type="date"/>
+    <property column="LASTMODIFIEDDATE" name="lastModifiedDate" type="date"/>
+    <property column="USERNAME" name="recordedBy" type="string"/>
+  </class>
+</hibernate-mapping>

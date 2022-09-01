@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.NutritionAssessment" table="APP.NUTRITIONASSESSMENT">
+      <id name="recordId" column="RECORDID" type="int">
+        <generator class="identity"/>
+    </id>
+    <property column="OVCID" name="ovcId" type="string"/>
+    <property column="ASSESSMENTNO" name="assessmentNo" type="int"/>
+    <property column="BMI" name="bmi" type="double"/>
+    <property column="CHANGEINWEIGHT" name="changeInWeight" type="int"/>
+    <property column="DATECREATED" name="dateCreated" type="date"/>
+    <property column="DATEOFASSESSMENT" name="dateOfAssessment" type="date"/>
+    <property column="DATEOFLASTWEIGHT" name="dateOfLastWeight" type="date"/>
+    <property column="FOODSECURITYANDDIETQ1" name="foodSecurityAndDietQ1" type="int"/>
+    <property column="FOODSECURITYANDDIETQ2" name="foodSecurityAndDietQ2" type="int"/>
+    <property column="FOODSECURITYANDDIETQ3" name="foodSecurityAndDietQ3" type="int"/>
+    <property column="FOODSECURITYANDDIETQ4" name="foodSecurityAndDietQ4" type="int"/>
+    <property column="FOODSECURITYANDDIETQ5" name="foodSecurityAndDietQ5" type="int"/>
+    <property column="FOODSECURITYANDDIETQ6" name="foodSecurityAndDietQ6" type="int"/>
+    <property column="FOODSECURITYANDDIETQ7" name="foodSecurityAndDietQ7" type="int"/>
+    <property column="FOODSECURITYANDDIETQ8" name="foodSecurityAndDietQ8" type="int"/>
+    <property column="FOODSECURITYANDDIETQ9" name="foodSecurityAndDietQ9" type="int"/>
+    <property column="HEIGHT" name="height" type="double"/>
+    <property column="HYGIENEQ1" name="hygieneQ1" type="int"/>
+    <property column="HYGIENEQ2" name="hygieneQ2" type="int"/>
+    <property column="HYGIENEQ3" name="hygieneQ3" type="int"/>
+    <property column="HYGIENEQ4" name="hygieneQ4" type="int"/>
+    <property column="LASTMODIFIEDDATE" name="lastModifiedDate" type="date"/>
+    <property column="LASTWEIGHT" name="lastWeight" type="double"/>
+    <property column="MARKEDFORDELETE" name="markedForDelete" type="int"/>
+    <property column="MUAC" name="muac" type="int"/>
+    <property column="MUACFACILITY" name="muacFacility" type="string"/>
+    <property column="NUTRITIONALSTATUS" name="nutritionalStatus" type="int"/>
+    <property column="OEDEMA" name="oedema" type="int"/>
+    <property column="RECORDSTATUS" name="recordStatus" type="int"/>
+    <property column="RECORDEDBY" name="recordedBy" type="string"/>
+    <property column="VOLUNTEERNAME" name="volunteerName" type="string"/>
+    <property column="WEIGHT" name="weight" type="double"/>
+    <property column="YELLOWMUACSERVICES" name="yellowMuacServices" type="string"/>
+    <property column="AGEATASSESSMENT" name="ageAtAssessment" type="int"/>
+    <property column="AGEUNITATASSESSMENT" name="ageUnitAtAssessment" type="int"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.reports.utils.HivRiskAssessmentReport" table="APP.HIVRISKASSESSMENTREPORT">
+      <id name="beneficiaryId" column="BENEFICIARYID" type="string"/>
+      <property name="currentEnrollmentStatus" column="CURRENTENROLLMENTSTATUS" type="int"/>
+      <property name="dateOfCurrentEnrollmentStatus" column="DATEOFCURRENTENROLLMENTSTATUS" type="date"/>
+      <property name="currentHivStatus" column="CURRENTHIVSTATUS" type="int"/>
+      <property name="dateOfCurrentHivStatus" column="DATEOFCURRENTHIVSTATUS" type="date"/>
+      <property name="outcomeOfLastHivRiskAssessment" column="OUTCOMEOFLASTRISKASSESSMENT" type="int"/>
+      <property name="dateOfLastRiskAssessment" column="DATEOFLASTRISKASSESSMENT" type="date"/>
+      <property name="outcomeOfPreviousRiskAssessment" column="OUTCOMEOFPREVIOUSRISKASSESSMENT" type="int"/>
+      <property name="dateOfPreviousRiskAssessment" column="DATEOFPREVIOUSRISKASSESSMENT" type="date"/>
+      <property name="daysSinceLastRiskAssessment" column="DAYSSINCELASTHIVRISKASSESSMENT" type="int"/>
+      <property name="lastUpdatedDate" column="LASTMODIFIEDDATE" type="date"/>
+      <property name="childReferredForHIVTest" column="CHILDREFERREDFORHIVTEST" type="int"/>
+   </class>
+</hibernate-mapping>

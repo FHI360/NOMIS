@@ -1,0 +1,243 @@
+.fieldcellinput {    
+ width: 200px;    
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;    
+ background-color: #D7E5F2;
+ color: #102132;    
+ border: 1px solid #284279;    
+ margin-right: 0px;    
+}
+.contactscellinput {
+ width: 121px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+ margin-right: 0px;
+}
+.contactslongcell {
+ width: 462px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+ margin-right: 0px;
+}
+.smallfieldcellinput {    
+ width: 100px;    
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;    
+ background-color: #D7E5F2;
+ color: #102132;    
+ border: 1px solid #284279;    
+}
+.bigfieldcellinput {
+ width: 250px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+}
+   
+.smallfieldcellselect {    
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;    
+ background-color: #D7E5F2;
+ color: #102132;    
+ border: 1px solid #284279;    
+}
+.button {    
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;    
+ background-color: #D7E5F2;    
+ color: #102132;    
+ margin-left: 12px;    
+ margin-top: 3px;    
+ margin-bottom: 2px;    
+}
+
+.regsitertable {  
+ background-color: #F9FBFD;
+ color: #000000;
+ border: 1px solid #D7E5F2;
+ border-collapse: collapse;  
+}  
+  .userlogin {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+}
+.textunder {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+.right {
+	text-align: left;
+}
+
+
+/*    */
+
+.textareacellinput {
+ width: 200px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+ margin-right: 0px;
+}
+.textarealongcell
+{
+ width: 400px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+ margin-right: 0px;
+}
+.shortfieldcellinput {
+ width: 50px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+}
+.summarytable {
+
+                border-collapse: collapse;
+                margin: 10px;
+                border: 1px solid black;
+                color: black;
+            
+}
+.search
+{
+	position: absolute; left: 60%; top: 36%;
+        /*margin-left: 133px;*/ /*margin-top: -76px;*/
+	border-style:solid;
+	border-width:1px;
+	/*border-color: #3366CC;* width: 150px*/
+	border-color:#3333FF;
+	border-top-width:0px;
+	background-color: #0066FF;/*#3333FF;*/
+	padding:1px;
+	font-family:Arial;
+	font-weight:bold;
+	font-size:10pt;
+	/*z-index:2;*/
+	visibility:hidden;
+}
+.paramPage
+{
+	 background-color:#4E9258
+             /*green;*/
+}
+.setuppagebg
+{
+	 background-color: #4E9258;
+}
+.tooltip
+{
+	position: absolute; left: 30%; top: 36%;
+        border-style:solid;
+	border-width:1px;
+	border-color:#3333FF;
+	background-color:#FFFFCC ;/*#3333FF;*/
+	padding:1px;
+	font-family:Arial;
+	font-weight:bold;
+	font-size:10pt;
+        height: 150px;
+        visibility:hidden;
+	/*z-index:2;*/
+	
+}
+/*
+.errorMessages
+{
+    background-color: #FFCCCC;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    padding: 11px;
+    display: block;
+    width: 400px;
+    color: #000000;
+}
+*/
+
+
+
+/*
+
+
+.fieldcellinput {
+ width: 200px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+ margin-right: 0px;
+}
+.textareacellinput {
+ width: 200px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+ margin-right: 0px;
+}
+.shortfieldcellinput {
+ width: 50px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+}
+
+.smallfieldcellinput {
+ width: 100px;
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+}
+
+.smallfieldcellselect {
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ border: 1px solid #284279;
+}
+
+.button {
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-color: #D7E5F2;
+ color: #102132;
+ margin-left: 12px;
+ margin-top: 3px;
+ margin-bottom: 2px;
+}
+
+.regsitertable {
+ background-color: #F9FBFD;
+ color: #000000;
+ border: 1px solid #D7E5F2;
+ border-collapse: collapse;
+}
+  .userlogin {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.textunder {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+.right {
+	text-align: left;
+}
+
+
+*/

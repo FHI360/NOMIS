@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.ovc.business.ReferralFacility" table="APP.REFERRALDIRECTORY">
+      <id name="facilityId" column="FACILITYID" type="string"/>
+    <property name="address" column="ADDRESS" type="string"/>
+    <property name="contactEmail" column="CONTACTEMAIL" type="string"/>
+    <property name="contactPhone" column="CONTACTPHONE" type="string"/>
+    <property name="dateCreated" column="DATECREATED" type="date"/>
+    <property name="facilityName" column="FACILITYNAME" type="string"/>
+    <property name="lastModifiedDate" column="LASTMODIFIEDDATE" type="date"/>
+    <property name="nameOfContactPerson" column="NAMEOFCONTACTPERSON" type="string"/>
+    <property name="typeOfFacility" column="TYPEOFFACILITY" type="int"/>
+    <property name="latitude" column="LATITUDE" type="double"/>
+    <property name="longitude" column="LONGITUDE" type="double"/>
+    <property name="recordedBy" column="RECORDEDBY" type="string"/>
+    <property name="organizationUnitId" column="ORGANIZATIONUNITID" type="string"/>
+    <property name="datimId" column="DATIMID" type="string"/>
+  </class>
+</hibernate-mapping>

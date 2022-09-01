@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.nomis.reports.utils.DatimReportTemplateTest" table="APP.DATIMREPORTTEMPLATETEST">
+      <id name="recordId" column="RECORDID" type="int">
+        <generator class="identity"/>
+      </id>
+      <property name="cbo" column="CBO" type="string"/>
+      <property name="ovc_servFemale10To14" column="F10TO14" type="int"/>
+      <property name="ovc_servFemale15To17" column="F15TO17" type="int"/>
+      <property name="ovc_servFemale18To24" column="F18TO24" type="int"/>
+      <property name="ovc_servFemale25AndAbove" column="F25PLUS" type="int"/>
+      <property name="level2Ou" column="LEVEL2OU" type="string"/>
+      <property name="level3Ou" column="LEVEL3OU" type="string"/>
+      <property name="ovc_servMale10To14" column="M10TO14" type="int"/>
+      <property name="ovc_servMale15To17" column="M15TO17" type="int"/>
+      <property name="ovc_servMale18To24" column="M18TO24" type="int"/>
+      <property name="ovc_servMale25AndAbove" column="M25PLUS" type="int"/>
+      <property name="ovc_servLessThan1" column="OVC_SERVLESSTHAN1" type="int"/>
+      <property name="ovc_serv1To4" column="OVC_SERV1TO4" type="int"/>
+      <property name="ovc_serv1To9" column="OVC_SERV1TO9" type="int"/>
+      <property name="ovc_serv5To9" column="OVC_SERV5TO9" type="int"/>
+   </class>
+</hibernate-mapping>
